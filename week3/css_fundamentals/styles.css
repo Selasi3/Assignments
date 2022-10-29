@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(227, 227, 227);
+}
+
+.topnav {
+    background-color: rgb(3, 63, 58);
+    overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: rgb(166, 228, 173);
+    color: black;
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-color: #c3cbc8b8;
+    color: white;
+}
+
+.topnav li {
+    display: inline;
+}
+
+.section {
+    width: 100%;
+    height: 500px;
+}
+
+.green {
+    background-color: rgb(3, 63, 58);
+    color: white;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+}
+
+
+/* .col{
+  margin:50px;
+  width: 50%;
+} */
+
+.pic {
+    height: 400px;
+    width: 400px;
+    border: 3px solid green;
+    margin: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+
+/* .left{ 
+   float :left;
+  width: 50%;
+  box-sizing: border-box;
+}
+.right{
+  float:right;
+  width: 50%;
+  box-sizing: border-box;
+
+} */
+
+.name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr {
+    width: 50%;
+    margin-top: -20px;
+    text-align: center;
+    /* align-items: center; */
+}
+
+p {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+
+/* Stops the float property from affecting content after the columns */
+
+.columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form {
+    width: 80%;
+    margin: 0 10%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: rgb(3, 63, 58);
+    width: 100%;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    section {
+        width: 100%;
+    }
+}
